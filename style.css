@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: helvetica;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h1{
+    padding-top: 5vh;
+    color: #ffffff;
+}
+
+.leftimg{
+    width: 35vw;
+}
+
+.right{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textfield label{
+    display: flex;
+    margin-bottom: 10px;
+    color: #f0ffffde;
+}
+
+.textfield ::placeholder{
+    color: #f0ffffde;
+}
+
+.textfield input{
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #453BF7;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;  
+    box-sizing: border-box;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #2B3CE0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #2B3CE0;
+}
+
+.card h1{
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+@media screen and (max-width:950px) {
+    .card{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .main{
+        flex-direction: column;
+    }
+    .left h1{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .leftimg{
+        width: 50vw;
+    }
+}
